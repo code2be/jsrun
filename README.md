@@ -12,7 +12,7 @@ Simple JS/Node code VM/Sandbox executing bot for Freenode IRC
 2. The bot will run the message contents as code, and reply with the response, mentioning the message sender at the beginning of the reply.
 
 ## Security
-Usage of [https://github.com/patriksimek/vm2](vm2) guarantee the executing of JS/Node code in VM/Sandbox, which mean the executed code cann't access `document`, `process`, `this` and others of critical objects that would been accessible in case of running the code using [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval](eval).
+Usage of [vm2](https://github.com/patriksimek/vm2) guarantee the executing of JS/Node code in VM/Sandbox, which mean the executed code cann't access `document`, `process`, `this` and others of critical objects that would been accessible in case of running the code using [eval](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval).
 
 ## Contributing
 You're very welcome to make PR at anytime.
