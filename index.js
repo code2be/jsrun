@@ -29,7 +29,7 @@ bot.addListener("registered", () => {
     });
 
     bot.addListener("message", (from, to, text, message) => {
-        if (text.substring(0, 7) == "!jsrun ") {
+        if (text.substring(0, 7) == "!" + config.nick + " ") {
             console.log(from, to, text, message);
 
             let result = null;
