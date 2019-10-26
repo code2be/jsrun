@@ -7,6 +7,10 @@ Simple JS/Node code VM/Sandbox executing bot for Freenode IRC
 3. Set the `channels` property to array of channels which the bot should join after authentication.
 3. Run `node index.js`.
 
+### Identified only channels
+Some channels ask users to identify before joining, that's why this bot make sure that NickServ sent a NOTICE to the bot starting with "You are now identified for". After that, code start to join required channels. 
+If you've a better way to handle that, please make a PR.
+
 ## Usage
 1. The bot will listen for any channel message starting with `!jsrun `, considering your nick is `jsrun`.
 2. The bot will run the message contents as code, and reply with the response, mentioning the message sender at the beginning of the reply.
